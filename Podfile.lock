@@ -83,12 +83,14 @@ PODS:
     - Analytics
     - Firebase/Core (~> 6.2)
     - FirebaseAnalytics (~> 6.1)
+  - Split (2.8.0)
 
 DEPENDENCIES:
-  - Analytics (~> 4.1)
+  - Analytics
   - Firebase/Analytics
   - Firebase/RemoteConfig
   - Segment-Firebase
+  - Split
 
 SPEC REPOS:
   trunk:
@@ -106,6 +108,7 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
     - Segment-Firebase
+    - Split
 
 SPEC CHECKSUMS:
   Analytics: 177da2c597aba83a6882b706ca6e0a071fd7cd26
@@ -122,7 +125,8 @@ SPEC CHECKSUMS:
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   Segment-Firebase: 41677a446f58989db69912059949107afb0c3f38
+  Split: f9a62c7fcd043b7583f4e40dd07fb2409d2a9ca5
 
-PODFILE CHECKSUM: 57dfe38840a123718725342d4e3c67232e36ea33
+PODFILE CHECKSUM: c061de89271e7c514b779171e5a882a960679f2e
 
 COCOAPODS: 1.10.0
