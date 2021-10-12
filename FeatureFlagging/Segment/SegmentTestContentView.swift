@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SegmentTestContentView: View {
     @State var showImage = false
     
     var body: some View {
@@ -99,19 +99,21 @@ struct ContentView: View {
 
     func checkUpdates() {
         
-        FeatureFlag.sharedInstance.refresh(){
-            showImage = FeatureFlag.sharedInstance.isEnabled(key:FeatureFlagKeys.ShowLandmarkImage) ?? true
-            sendAnalytics()
-        }
+//        FeatureFlag.sharedInstance.refresh(){
+//            showImage = FeatureFlag.sharedInstance.isEnabled(key:FeatureFlagKeys.ShowLandmarkImage) ?? true
+        showImage = FeatureFlag.sharedInstance.isEnabled(key:FeatureFlagKeys.ShowLandmarkImage)
+
+        sendAnalytics()
+//        }
     }
     
     func sendAnalytics() {
         //            bAnalytics.sharedInstance.track(event: AnalyticsProperty.ShowLandmarkImage, properties:
         //                                                [AnalyticsProperty.isEnabled : FeatureFlag.sharedInstance.isEnabled(key:FeatureFlagKeys.ShowLandmarkImage)!])
         
-        bAnalytics.sharedInstance.track(event: AnalyticsProperty.ShowLandmarkImage, properties:
-                                            [AnalyticsProperty.isEnabled : FeatureFlag.sharedInstance.isEnabled(key:FeatureFlagKeys.ShowLandmarkImage)!,
-                                             AnalyticsProperty.FeatureFlagProvider : "FireBase"])
+//        bAnalytics.sharedInstance.track(event: AnalyticsProperty.ShowLandmarkImage, properties:
+//                                            [AnalyticsProperty.isEnabled : FeatureFlag.sharedInstance.isEnabled(key:FeatureFlagKeys.ShowLandmarkImage),
+//                                             AnalyticsProperty.FeatureFlagProvider : "FireBase"])
     }
 
     func identify() {
@@ -128,8 +130,8 @@ struct ContentView: View {
 }
 
 
-struct ContentView_Previews: PreviewProvider {
+struct SegmentTestContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SegmentTestContentView()
     }
 }

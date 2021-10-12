@@ -13,7 +13,8 @@ struct FeatureFlagingApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            SegmentTestContentView()
+//            SplitTestContentView()
         }
     }
 }

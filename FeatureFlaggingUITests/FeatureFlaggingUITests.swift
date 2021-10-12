@@ -21,22 +21,30 @@ class FeatureFlaggingUITests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() throws {
+    
+    func testSplit() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
+        
+        let maxCount = 5000
+        
+        for counter in 1...maxCount {
+            print("Running Test: \(counter) of \(maxCount)")
+            
+            app.buttons["initializer"].tap()
+            
+            XCTAssert(app.staticTexts["sdkReady"].waitForExistence(timeout: 10), "SKD Not Ready")
 
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+            app.buttons["sendEvent"].tap()
+            
+            app.buttons["deInitialize"].tap()
+            
+            XCTAssert(app.staticTexts["sdkNotReady"].waitForExistence(timeout: 10), "SKD Still Ready")
 
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
+            app.buttons["increment"].tap()
+
         }
     }
+    
 }

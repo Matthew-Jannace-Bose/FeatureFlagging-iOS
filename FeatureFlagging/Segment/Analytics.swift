@@ -9,6 +9,7 @@ import Segment
 import Segment_Firebase
 
 public protocol AnalyticsServicing {
+    func getAnonymousId() -> String
     func enable()
     func disable()
     func identify(_ userId: String)
@@ -16,11 +17,10 @@ public protocol AnalyticsServicing {
     func resetAndRetainAnonID(async:Bool)
     func track<T: RawRepresentable>(screen: T, properties: [AnalyticsProperty: AnalyticsSerializable]?) where T.RawValue == String
     func track<T: RawRepresentable>(event: T, properties: [AnalyticsProperty: AnalyticsSerializable]?) where T.RawValue == String
-    
     /// Legacy method that accepts a dictionary with any arbitrary String key.
     /// We should prefer using the methods above (using AnalyticsProperty for keys).
     /// This was kept around to accommodate the BoseEvent.general associated value `info`.
-    func track<T: RawRepresentable>(event: T, info: [String: Any]?) where T.RawValue == String
+    func track(event: String, properties: [String: Any]?, value:String?)
 }
 
 public extension AnalyticsServicing {
@@ -40,8 +40,8 @@ class bAnalytics {
 class Segment: AnalyticsServicing {
     
     let segment: Analytics
-    let segmentOptions: [String:Any] = ["context":["protocols":["event_version":1]]]
-    //    let segmentOptions: [String:Any] = [String:Any]()
+    let defaultSegmentOptions: [String:Any] = ["context":["protocols":["event_version":1]]]
+    //    let defaultSegmentOptions: [String:Any] = [String:Any]()
     var delay:Double = 0.1
     var counter:Int = 0
     
@@ -58,6 +58,10 @@ class Segment: AnalyticsServicing {
         segment = Analytics.shared()
     }
     
+    func getAnonymousId() -> String {
+       return segment.getAnonymousId()
+    }
+
     
     public func identify(_ userId: String) {
         segment.identify(userId, traits: nil, options: nil)
@@ -159,11 +163,17 @@ class Segment: AnalyticsServicing {
             stringKeyedProperties = props.keyedByRawValue()
         }
         
-        segment.track(event.rawValue, properties: stringKeyedProperties, options: segmentOptions)
+        segment.track(event.rawValue, properties: stringKeyedProperties, options: defaultSegmentOptions)
     }
     
-    public func track<T: RawRepresentable>(event: T, info: [String: Any]?) where T.RawValue == String {
-        segment.track(event.rawValue, properties: info)
+    public func track(event: String, properties: [String: Any]?, value: String? = nil) {
+
+        var segmentOptions = defaultSegmentOptions
+        if let trackValue = value {
+            segmentOptions["value"] = trackValue
+        }
+        
+        segment.track(event, properties: properties, options: segmentOptions)
     }
     
 }

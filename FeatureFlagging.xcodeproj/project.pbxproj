@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		781EB56869748B1BC214D01A /* Pods_FeatureFlaggingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1FE52624026EBAC3AE7F5FD /* Pods_FeatureFlaggingUITests.framework */; };
+		8E068208D833CB31EDA9DAE6 /* Pods_FeatureFlaggingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E830A1D105E7CD2EFAC985C /* Pods_FeatureFlaggingTests.framework */; };
 		D759A569D5072BEB31BD9BC9 /* Pods_FeatureFlagging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F08A5622BA00D41F3E4ECF0 /* Pods_FeatureFlagging.framework */; };
-		DBCD352725A4FC5A008D4A18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBCD352625A4FC5A008D4A18 /* Preview Assets.xcassets */; };
+		DB05451725AE385800700E02 /* splitConfig.yaml in Resources */ = {isa = PBXBuildFile; fileRef = DB05451625AE385800700E02 /* splitConfig.yaml */; };
+		DB64394725A8D7AF008D8C2A /* FeatureFlagsSplit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64394625A8D7AF008D8C2A /* FeatureFlagsSplit.swift */; };
+		DBA4066225B758D800D095BB /* SplitTestContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA4066125B758D800D095BB /* SplitTestContentView.swift */; };
 		DBCD353225A4FC5A008D4A18 /* FeatureFlaggingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD353125A4FC5A008D4A18 /* FeatureFlaggingTests.swift */; };
 		DBCD353D25A4FC5A008D4A18 /* FeatureFlaggingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD353C25A4FC5A008D4A18 /* FeatureFlaggingUITests.swift */; };
 		DBCD357625A4FD94008D4A18 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD356B25A4FD94008D4A18 /* Analytics.swift */; };
-		DBCD357725A4FD94008D4A18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD356C25A4FD94008D4A18 /* ContentView.swift */; };
+		DBCD357725A4FD94008D4A18 /* SegmentTestContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD356C25A4FD94008D4A18 /* SegmentTestContentView.swift */; };
 		DBCD357825A4FD94008D4A18 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD356D25A4FD94008D4A18 /* CircleImage.swift */; };
 		DBCD357925A4FD94008D4A18 /* FeatureFlagingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD356E25A4FD94008D4A18 /* FeatureFlagingApp.swift */; };
 		DBCD357B25A4FD94008D4A18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD357025A4FD94008D4A18 /* AppDelegate.swift */; };
 		DBCD357C25A4FD94008D4A18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBCD357225A4FD94008D4A18 /* Preview Assets.xcassets */; };
 		DBCD357D25A4FD94008D4A18 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD357325A4FD94008D4A18 /* MapView.swift */; };
 		DBCD357E25A4FD94008D4A18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBCD357425A4FD94008D4A18 /* Assets.xcassets */; };
-		DBCD357F25A4FD94008D4A18 /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD357525A4FD94008D4A18 /* FeatureFlags.swift */; };
+		DBCD357F25A4FD94008D4A18 /* FeatureFlagsA.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD357525A4FD94008D4A18 /* FeatureFlagsA.swift */; };
 		DBCD358D25A4FFD0008D4A18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBCD358C25A4FFD0008D4A18 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -41,12 +45,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E830A1D105E7CD2EFAC985C /* Pods_FeatureFlaggingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeatureFlaggingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23BF41995268F63E9BC8E77C /* Pods-FeatureFlaggingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureFlaggingUITests.debug.xcconfig"; path = "Target Support Files/Pods-FeatureFlaggingUITests/Pods-FeatureFlaggingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4ADDEC5896F64DD667B3FF72 /* Pods-FeatureFlaggingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureFlaggingUITests.release.xcconfig"; path = "Target Support Files/Pods-FeatureFlaggingUITests/Pods-FeatureFlaggingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8F08A5622BA00D41F3E4ECF0 /* Pods_FeatureFlagging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeatureFlagging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABA8A36703FED96477D495A2 /* Pods-FeatureFlaggingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureFlaggingTests.release.xcconfig"; path = "Target Support Files/Pods-FeatureFlaggingTests/Pods-FeatureFlaggingTests.release.xcconfig"; sourceTree = "<group>"; };
 		C152FE96BC779F19BCF05701 /* Pods-FeatureFlagging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureFlagging.debug.xcconfig"; path = "Target Support Files/Pods-FeatureFlagging/Pods-FeatureFlagging.debug.xcconfig"; sourceTree = "<group>"; };
 		C5805D4F85BE92663CF9A495 /* Pods-FeatureFlagging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureFlagging.release.xcconfig"; path = "Target Support Files/Pods-FeatureFlagging/Pods-FeatureFlagging.release.xcconfig"; sourceTree = "<group>"; };
-		DB518C8525A5047D00A5E442 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		D1FE52624026EBAC3AE7F5FD /* Pods_FeatureFlaggingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeatureFlaggingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB05451625AE385800700E02 /* splitConfig.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = splitConfig.yaml; sourceTree = "<group>"; };
+		DB64394625A8D7AF008D8C2A /* FeatureFlagsSplit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlagsSplit.swift; sourceTree = "<group>"; };
+		DBA4066125B758D800D095BB /* SplitTestContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitTestContentView.swift; sourceTree = "<group>"; };
 		DBCD351C25A4FC58008D4A18 /* FeatureFlagging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeatureFlagging.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBCD352625A4FC5A008D4A18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DBCD352825A4FC5A008D4A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBCD352D25A4FC5A008D4A18 /* FeatureFlaggingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeatureFlaggingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBCD353125A4FC5A008D4A18 /* FeatureFlaggingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlaggingTests.swift; sourceTree = "<group>"; };
@@ -56,15 +66,16 @@
 		DBCD353E25A4FC5A008D4A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBCD356A25A4FD93008D4A18 /* FeatureFlagging-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FeatureFlagging-Bridging-Header.h"; sourceTree = "<group>"; };
 		DBCD356B25A4FD94008D4A18 /* Analytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
-		DBCD356C25A4FD94008D4A18 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DBCD356C25A4FD94008D4A18 /* SegmentTestContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentTestContentView.swift; sourceTree = "<group>"; };
 		DBCD356D25A4FD94008D4A18 /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		DBCD356E25A4FD94008D4A18 /* FeatureFlagingApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureFlagingApp.swift; sourceTree = "<group>"; };
 		DBCD357025A4FD94008D4A18 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBCD357225A4FD94008D4A18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DBCD357325A4FD94008D4A18 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DBCD357425A4FD94008D4A18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DBCD357525A4FD94008D4A18 /* FeatureFlags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureFlags.swift; sourceTree = "<group>"; };
-		DBCD358C25A4FFD0008D4A18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		DBCD357525A4FD94008D4A18 /* FeatureFlagsA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureFlagsA.swift; sourceTree = "<group>"; };
+		DBCD358C25A4FFD0008D4A18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "FeatureFlagging/Remote Config/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E00042EC13B7CAE34F15CB6C /* Pods-FeatureFlaggingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureFlaggingTests.debug.xcconfig"; path = "Target Support Files/Pods-FeatureFlaggingTests/Pods-FeatureFlaggingTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E068208D833CB31EDA9DAE6 /* Pods_FeatureFlaggingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				781EB56869748B1BC214D01A /* Pods_FeatureFlaggingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +111,10 @@
 			children = (
 				C152FE96BC779F19BCF05701 /* Pods-FeatureFlagging.debug.xcconfig */,
 				C5805D4F85BE92663CF9A495 /* Pods-FeatureFlagging.release.xcconfig */,
+				23BF41995268F63E9BC8E77C /* Pods-FeatureFlaggingUITests.debug.xcconfig */,
+				4ADDEC5896F64DD667B3FF72 /* Pods-FeatureFlaggingUITests.release.xcconfig */,
+				E00042EC13B7CAE34F15CB6C /* Pods-FeatureFlaggingTests.debug.xcconfig */,
+				ABA8A36703FED96477D495A2 /* Pods-FeatureFlaggingTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -106,8 +123,57 @@
 			isa = PBXGroup;
 			children = (
 				8F08A5622BA00D41F3E4ECF0 /* Pods_FeatureFlagging.framework */,
+				D1FE52624026EBAC3AE7F5FD /* Pods_FeatureFlaggingUITests.framework */,
+				1E830A1D105E7CD2EFAC985C /* Pods_FeatureFlaggingTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBBE1E7525BF1B5D004616CA /* Split */ = {
+			isa = PBXGroup;
+			children = (
+				DBA4066125B758D800D095BB /* SplitTestContentView.swift */,
+				DB64394625A8D7AF008D8C2A /* FeatureFlagsSplit.swift */,
+			);
+			path = Split;
+			sourceTree = "<group>";
+		};
+		DBBE1E7625BF1B71004616CA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB05451625AE385800700E02 /* splitConfig.yaml */,
+				DBCD356D25A4FD94008D4A18 /* CircleImage.swift */,
+				DBCD357325A4FD94008D4A18 /* MapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DBBE1E7725BF1B95004616CA /* Remote Config */ = {
+			isa = PBXGroup;
+			children = (
+				DBCD358C25A4FFD0008D4A18 /* GoogleService-Info.plist */,
+				DBCD357525A4FD94008D4A18 /* FeatureFlagsA.swift */,
+			);
+			path = "Remote Config";
+			sourceTree = "<group>";
+		};
+		DBBE1E7E25BF1BC8004616CA /* Segment */ = {
+			isa = PBXGroup;
+			children = (
+				DBCD356B25A4FD94008D4A18 /* Analytics.swift */,
+				DBCD356C25A4FD94008D4A18 /* SegmentTestContentView.swift */,
+			);
+			path = Segment;
+			sourceTree = "<group>";
+		};
+		DBBE1E8525BF1BF3004616CA /* Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				DBCD352825A4FC5A008D4A18 /* Info.plist */,
+				DBCD357425A4FD94008D4A18 /* Assets.xcassets */,
+				DBCD356A25A4FD93008D4A18 /* FeatureFlagging-Bridging-Header.h */,
+			);
+			path = Stuff;
 			sourceTree = "<group>";
 		};
 		DBCD351325A4FC58008D4A18 = {
@@ -135,30 +201,16 @@
 		DBCD351E25A4FC58008D4A18 /* FeatureFlagging */ = {
 			isa = PBXGroup;
 			children = (
-				DBCD356B25A4FD94008D4A18 /* Analytics.swift */,
-				DBCD357025A4FD94008D4A18 /* AppDelegate.swift */,
-				DBCD357425A4FD94008D4A18 /* Assets.xcassets */,
-				DBCD356D25A4FD94008D4A18 /* CircleImage.swift */,
-				DBCD356C25A4FD94008D4A18 /* ContentView.swift */,
-				DBCD357525A4FD94008D4A18 /* FeatureFlags.swift */,
 				DBCD356E25A4FD94008D4A18 /* FeatureFlagingApp.swift */,
-				DBCD357325A4FD94008D4A18 /* MapView.swift */,
-				DB518C8525A5047D00A5E442 /* Podfile */,
+				DBCD357025A4FD94008D4A18 /* AppDelegate.swift */,
+				DBBE1E7E25BF1BC8004616CA /* Segment */,
+				DBBE1E7725BF1B95004616CA /* Remote Config */,
+				DBBE1E7625BF1B71004616CA /* Views */,
+				DBBE1E7525BF1B5D004616CA /* Split */,
 				DBCD357125A4FD94008D4A18 /* Preview Content */,
-				DBCD352825A4FC5A008D4A18 /* Info.plist */,
-				DBCD352525A4FC5A008D4A18 /* Preview Content */,
-				DBCD356A25A4FD93008D4A18 /* FeatureFlagging-Bridging-Header.h */,
-				DBCD358C25A4FFD0008D4A18 /* GoogleService-Info.plist */,
+				DBBE1E8525BF1BF3004616CA /* Stuff */,
 			);
 			path = FeatureFlagging;
-			sourceTree = "<group>";
-		};
-		DBCD352525A4FC5A008D4A18 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				DBCD352625A4FC5A008D4A18 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		DBCD353025A4FC5A008D4A18 /* FeatureFlaggingTests */ = {
@@ -213,9 +265,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBCD354425A4FC5A008D4A18 /* Build configuration list for PBXNativeTarget "FeatureFlaggingTests" */;
 			buildPhases = (
+				13F1E05B0D7BD8FC9A9519E9 /* [CP] Check Pods Manifest.lock */,
 				DBCD352925A4FC5A008D4A18 /* Sources */,
 				DBCD352A25A4FC5A008D4A18 /* Frameworks */,
 				DBCD352B25A4FC5A008D4A18 /* Resources */,
+				A9496ECD2D573D20533BC09B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,9 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBCD354725A4FC5A008D4A18 /* Build configuration list for PBXNativeTarget "FeatureFlaggingUITests" */;
 			buildPhases = (
+				7E61CBA31BAF1B0AC91089E8 /* [CP] Check Pods Manifest.lock */,
 				DBCD353425A4FC5A008D4A18 /* Sources */,
 				DBCD353525A4FC5A008D4A18 /* Frameworks */,
 				DBCD353625A4FC5A008D4A18 /* Resources */,
+				14341589AF44F0402E3F04CA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -296,7 +352,7 @@
 				DBCD357C25A4FD94008D4A18 /* Preview Assets.xcassets in Resources */,
 				DBCD358D25A4FFD0008D4A18 /* GoogleService-Info.plist in Resources */,
 				DBCD357E25A4FD94008D4A18 /* Assets.xcassets in Resources */,
-				DBCD352725A4FC5A008D4A18 /* Preview Assets.xcassets in Resources */,
+				DB05451725AE385800700E02 /* splitConfig.yaml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +373,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		13F1E05B0D7BD8FC9A9519E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FeatureFlaggingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14341589AF44F0402E3F04CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FeatureFlaggingUITests/Pods-FeatureFlaggingUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FeatureFlaggingUITests/Pods-FeatureFlaggingUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FeatureFlaggingUITests/Pods-FeatureFlaggingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1FE6204BE3F11FAF1A5651DF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -356,6 +451,45 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7E61CBA31BAF1B0AC91089E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FeatureFlaggingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9496ECD2D573D20533BC09B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FeatureFlaggingTests/Pods-FeatureFlaggingTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FeatureFlaggingTests/Pods-FeatureFlaggingTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FeatureFlaggingTests/Pods-FeatureFlaggingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -363,13 +497,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBCD357725A4FD94008D4A18 /* ContentView.swift in Sources */,
+				DB64394725A8D7AF008D8C2A /* FeatureFlagsSplit.swift in Sources */,
+				DBA4066225B758D800D095BB /* SplitTestContentView.swift in Sources */,
+				DBCD357725A4FD94008D4A18 /* SegmentTestContentView.swift in Sources */,
 				DBCD357D25A4FD94008D4A18 /* MapView.swift in Sources */,
 				DBCD357625A4FD94008D4A18 /* Analytics.swift in Sources */,
 				DBCD357825A4FD94008D4A18 /* CircleImage.swift in Sources */,
 				DBCD357B25A4FD94008D4A18 /* AppDelegate.swift in Sources */,
 				DBCD357925A4FD94008D4A18 /* FeatureFlagingApp.swift in Sources */,
-				DBCD357F25A4FD94008D4A18 /* FeatureFlags.swift in Sources */,
+				DBCD357F25A4FD94008D4A18 /* FeatureFlagsA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,7 +668,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FeatureFlagging/Preview Content\"";
 				DEVELOPMENT_TEAM = 585669FG9J;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = FeatureFlagging/Info.plist;
+				INFOPLIST_FILE = FeatureFlagging/Stuff/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -540,7 +676,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bose.maui-exploration";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "FeatureFlagging/FeatureFlagging-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "FeatureFlagging/Stuff/FeatureFlagging-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -558,7 +694,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FeatureFlagging/Preview Content\"";
 				DEVELOPMENT_TEAM = 585669FG9J;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = FeatureFlagging/Info.plist;
+				INFOPLIST_FILE = FeatureFlagging/Stuff/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -566,7 +702,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bose.maui-exploration";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "FeatureFlagging/FeatureFlagging-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "FeatureFlagging/Stuff/FeatureFlagging-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -574,6 +710,7 @@
 		};
 		DBCD354525A4FC5A008D4A18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E00042EC13B7CAE34F15CB6C /* Pods-FeatureFlaggingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -596,6 +733,7 @@
 		};
 		DBCD354625A4FC5A008D4A18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABA8A36703FED96477D495A2 /* Pods-FeatureFlaggingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -618,6 +756,7 @@
 		};
 		DBCD354825A4FC5A008D4A18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23BF41995268F63E9BC8E77C /* Pods-FeatureFlaggingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -638,6 +777,7 @@
 		};
 		DBCD354925A4FC5A008D4A18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ADDEC5896F64DD667B3FF72 /* Pods-FeatureFlaggingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

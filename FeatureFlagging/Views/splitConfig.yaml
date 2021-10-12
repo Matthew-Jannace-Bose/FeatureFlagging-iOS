@@ -1,0 +1,9 @@
+# - feature_name:
+#     treatment: "treatment_applied_to_this_entry"
+#     keys: "single_key_or_list"
+#     config: "{\"desc\" : \"this applies only to ON treatment\"}"
+
+- my_feature:
+    treatment: "on"
+    keys: "show_landmark_image"
+    config: "{\"desc\" : \"Show show_landmark_image \"}"

@@ -1,5 +1,5 @@
 PODS:
-  - Analytics (4.1.2)
+  - Analytics (4.1.3)
   - Firebase/Analytics (6.34.0):
     - Firebase/Core
   - Firebase/Core (6.34.0):
@@ -111,7 +111,7 @@ SPEC REPOS:
     - Split
 
 SPEC CHECKSUMS:
-  Analytics: 177da2c597aba83a6882b706ca6e0a071fd7cd26
+  Analytics: 4c01e3e19d4be86705bad6581a1c2aa5a15a9d22
   Firebase: c23a36d9e4cdf7877dfcba8dd0c58add66358999
   FirebaseABTesting: 8a9d8df3acc2b43f4a22014ddf9f601bca6af699
   FirebaseAnalytics: 3bb096873ee0d7fa4b6c70f5e9166b6da413cc7f
@@ -127,6 +127,6 @@ SPEC CHECKSUMS:
   Segment-Firebase: 41677a446f58989db69912059949107afb0c3f38
   Split: f9a62c7fcd043b7583f4e40dd07fb2409d2a9ca5
 
-PODFILE CHECKSUM: c061de89271e7c514b779171e5a882a960679f2e
+PODFILE CHECKSUM: c3c3c86325b2d6ba242aa62a1199f1638cfc72c2
 
 COCOAPODS: 1.10.0
