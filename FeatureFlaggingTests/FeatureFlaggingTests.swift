@@ -6,7 +6,8 @@
 //
 
 import XCTest
-@testable import FeatureFlagging
+import Firebase
+//@testable import FeatureFlagging
 
 class FeatureFlaggingTests: XCTestCase {
 

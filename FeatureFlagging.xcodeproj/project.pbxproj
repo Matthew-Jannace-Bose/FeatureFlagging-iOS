@@ -23,7 +23,7 @@
 		DBCD357C25A4FD94008D4A18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBCD357225A4FD94008D4A18 /* Preview Assets.xcassets */; };
 		DBCD357D25A4FD94008D4A18 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD357325A4FD94008D4A18 /* MapView.swift */; };
 		DBCD357E25A4FD94008D4A18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBCD357425A4FD94008D4A18 /* Assets.xcassets */; };
-		DBCD357F25A4FD94008D4A18 /* FeatureFlagsA.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD357525A4FD94008D4A18 /* FeatureFlagsA.swift */; };
+		DBCD357F25A4FD94008D4A18 /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCD357525A4FD94008D4A18 /* FeatureFlags.swift */; };
 		DBCD358D25A4FFD0008D4A18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBCD358C25A4FFD0008D4A18 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -73,7 +73,7 @@
 		DBCD357225A4FD94008D4A18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DBCD357325A4FD94008D4A18 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DBCD357425A4FD94008D4A18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DBCD357525A4FD94008D4A18 /* FeatureFlagsA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureFlagsA.swift; sourceTree = "<group>"; };
+		DBCD357525A4FD94008D4A18 /* FeatureFlags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureFlags.swift; sourceTree = "<group>"; };
 		DBCD358C25A4FFD0008D4A18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "FeatureFlagging/Remote Config/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E00042EC13B7CAE34F15CB6C /* Pods-FeatureFlaggingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureFlaggingTests.debug.xcconfig"; path = "Target Support Files/Pods-FeatureFlaggingTests/Pods-FeatureFlaggingTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,7 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				DBCD358C25A4FFD0008D4A18 /* GoogleService-Info.plist */,
-				DBCD357525A4FD94008D4A18 /* FeatureFlagsA.swift */,
+				DBCD357525A4FD94008D4A18 /* FeatureFlags.swift */,
 			);
 			path = "Remote Config";
 			sourceTree = "<group>";
@@ -505,7 +505,7 @@
 				DBCD357825A4FD94008D4A18 /* CircleImage.swift in Sources */,
 				DBCD357B25A4FD94008D4A18 /* AppDelegate.swift in Sources */,
 				DBCD357925A4FD94008D4A18 /* FeatureFlagingApp.swift in Sources */,
-				DBCD357F25A4FD94008D4A18 /* FeatureFlagsA.swift in Sources */,
+				DBCD357F25A4FD94008D4A18 /* FeatureFlags.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,6 +664,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FeatureFlagging/Preview Content\"";
 				DEVELOPMENT_TEAM = 585669FG9J;
@@ -676,6 +677,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bose.maui-exploration";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "FeatureFlagging/Stuff/FeatureFlagging-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -690,6 +692,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FeatureFlagging/Preview Content\"";
 				DEVELOPMENT_TEAM = 585669FG9J;
@@ -702,6 +705,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bose.maui-exploration";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "FeatureFlagging/Stuff/FeatureFlagging-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -1,96 +1,118 @@
 PODS:
-  - Analytics (4.1.3)
-  - Firebase/Analytics (6.34.0):
+  - Analytics (4.1.6)
+  - Firebase (7.11.0):
+    - Firebase/Core (= 7.11.0)
+  - Firebase/Analytics (7.11.0):
     - Firebase/Core
-  - Firebase/Core (6.34.0):
+  - Firebase/Core (7.11.0):
     - Firebase/CoreOnly
-    - FirebaseAnalytics (= 6.9.0)
-  - Firebase/CoreOnly (6.34.0):
-    - FirebaseCore (= 6.10.4)
-  - Firebase/RemoteConfig (6.34.0):
+    - FirebaseAnalytics (~> 7.11.0)
+  - Firebase/CoreOnly (7.11.0):
+    - FirebaseCore (= 7.11.0)
+  - Firebase/RemoteConfig (7.11.0):
     - Firebase/CoreOnly
-    - FirebaseRemoteConfig (~> 4.9.1)
-  - FirebaseABTesting (4.2.0):
-    - FirebaseCore (~> 6.10)
-  - FirebaseAnalytics (6.9.0):
-    - FirebaseCore (~> 6.10)
-    - FirebaseInstallations (~> 1.7)
-    - GoogleAppMeasurement (= 6.9.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
-    - GoogleUtilities/MethodSwizzler (~> 6.7)
-    - GoogleUtilities/Network (~> 6.7)
-    - "GoogleUtilities/NSData+zlib (~> 6.7)"
-    - nanopb (~> 1.30906.0)
-  - FirebaseCore (6.10.4):
-    - FirebaseCoreDiagnostics (~> 1.6)
-    - GoogleUtilities/Environment (~> 6.7)
-    - GoogleUtilities/Logger (~> 6.7)
-  - FirebaseCoreDiagnostics (1.7.0):
-    - GoogleDataTransport (~> 7.4)
-    - GoogleUtilities/Environment (~> 6.7)
-    - GoogleUtilities/Logger (~> 6.7)
-    - nanopb (~> 1.30906.0)
-  - FirebaseInstallations (1.7.0):
-    - FirebaseCore (~> 6.10)
-    - GoogleUtilities/Environment (~> 6.7)
-    - GoogleUtilities/UserDefaults (~> 6.7)
+    - FirebaseRemoteConfig (~> 7.11.0)
+  - FirebaseABTesting (7.11.0):
+    - FirebaseCore (~> 7.0)
+  - FirebaseAnalytics (7.11.0):
+    - FirebaseAnalytics/AdIdSupport (= 7.11.0)
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GoogleUtilities/Network (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+    - nanopb (~> 2.30908.0)
+  - FirebaseAnalytics/AdIdSupport (7.11.0):
+    - FirebaseAnalytics/Base (= 7.11.0)
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleAppMeasurement/AdIdSupport (= 7.11.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GoogleUtilities/Network (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+    - nanopb (~> 2.30908.0)
+  - FirebaseAnalytics/Base (7.11.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GoogleUtilities/Network (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+    - nanopb (~> 2.30908.0)
+  - FirebaseCore (7.11.0):
+    - FirebaseCoreDiagnostics (~> 7.4)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Logger (~> 7.0)
+  - FirebaseCoreDiagnostics (7.11.0):
+    - GoogleDataTransport (~> 8.4)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Logger (~> 7.0)
+    - nanopb (~> 2.30908.0)
+  - FirebaseInstallations (7.11.0):
+    - FirebaseCore (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/UserDefaults (~> 7.0)
     - PromisesObjC (~> 1.2)
-  - FirebaseRemoteConfig (4.9.1):
-    - FirebaseABTesting (~> 4.2)
-    - FirebaseCore (~> 6.10)
-    - FirebaseInstallations (~> 1.6)
-    - GoogleUtilities/Environment (~> 6.7)
-    - "GoogleUtilities/NSData+zlib (~> 6.7)"
-  - GoogleAppMeasurement (6.9.0):
-    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
-    - GoogleUtilities/MethodSwizzler (~> 6.7)
-    - GoogleUtilities/Network (~> 6.7)
-    - "GoogleUtilities/NSData+zlib (~> 6.7)"
-    - nanopb (~> 1.30906.0)
-  - GoogleDataTransport (7.5.1):
-    - nanopb (~> 1.30906.0)
-  - GoogleUtilities/AppDelegateSwizzler (6.7.2):
+  - FirebaseRemoteConfig (7.11.0):
+    - FirebaseABTesting (~> 7.0)
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+  - GoogleAppMeasurement/AdIdSupport (7.11.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GoogleUtilities/Network (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+    - nanopb (~> 2.30908.0)
+  - GoogleDataTransport (8.4.0):
+    - GoogleUtilities/Environment (~> 7.2)
+    - nanopb (~> 2.30908.0)
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/AppDelegateSwizzler (7.5.2):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
-  - GoogleUtilities/Environment (6.7.2):
-    - PromisesObjC (~> 1.2)
-  - GoogleUtilities/Logger (6.7.2):
+  - GoogleUtilities/Environment (7.5.2):
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Logger (7.5.2):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (6.7.2):
+  - GoogleUtilities/MethodSwizzler (7.5.2):
     - GoogleUtilities/Logger
-  - GoogleUtilities/Network (6.7.2):
+  - GoogleUtilities/Network (7.5.2):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (6.7.2)"
-  - GoogleUtilities/Reachability (6.7.2):
+  - "GoogleUtilities/NSData+zlib (7.5.2)"
+  - GoogleUtilities/Reachability (7.5.2):
     - GoogleUtilities/Logger
-  - GoogleUtilities/UserDefaults (6.7.2):
+  - GoogleUtilities/UserDefaults (7.5.2):
     - GoogleUtilities/Logger
-  - nanopb (1.30906.0):
-    - nanopb/decode (= 1.30906.0)
-    - nanopb/encode (= 1.30906.0)
-  - nanopb/decode (1.30906.0)
-  - nanopb/encode (1.30906.0)
+  - nanopb (2.30908.0):
+    - nanopb/decode (= 2.30908.0)
+    - nanopb/encode (= 2.30908.0)
+  - nanopb/decode (2.30908.0)
+  - nanopb/encode (2.30908.0)
   - PromisesObjC (1.2.12)
-  - Segment-Firebase (2.7.0):
+  - Segment-Firebase (2.7.7):
     - Analytics
-    - Firebase/Core (~> 6.2)
-    - FirebaseAnalytics (~> 6.1)
-    - Segment-Firebase/Core (= 2.7.0)
-  - Segment-Firebase/Core (2.7.0):
+    - Firebase (~> 7.7)
+    - Firebase/Core (~> 7.7)
+    - FirebaseAnalytics (~> 7.7)
+    - Segment-Firebase/Core (= 2.7.7)
+  - Segment-Firebase/Core (2.7.7):
     - Analytics
-    - Firebase/Core (~> 6.2)
-    - FirebaseAnalytics (~> 6.1)
-  - Split (2.8.0)
+    - Firebase (~> 7.7)
+    - Firebase/Core (~> 7.7)
+    - FirebaseAnalytics (~> 7.7)
 
 DEPENDENCIES:
   - Analytics
   - Firebase/Analytics
   - Firebase/RemoteConfig
   - Segment-Firebase
-  - Split
 
 SPEC REPOS:
   trunk:
@@ -108,25 +130,23 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
     - Segment-Firebase
-    - Split
 
 SPEC CHECKSUMS:
-  Analytics: 4c01e3e19d4be86705bad6581a1c2aa5a15a9d22
-  Firebase: c23a36d9e4cdf7877dfcba8dd0c58add66358999
-  FirebaseABTesting: 8a9d8df3acc2b43f4a22014ddf9f601bca6af699
-  FirebaseAnalytics: 3bb096873ee0d7fa4b6c70f5e9166b6da413cc7f
-  FirebaseCore: d3a978a3cfa3240bf7e4ba7d137fdf5b22b628ec
-  FirebaseCoreDiagnostics: 770ac5958e1372ce67959ae4b4f31d8e127c3ac1
-  FirebaseInstallations: 466c7b4d1f58fe16707693091da253726a731ed2
-  FirebaseRemoteConfig: 35a729305f254fb15a2e541d4b36f3a379da7fdc
-  GoogleAppMeasurement: a6a3a066369828db64eda428cb2856dc1cdc7c4e
-  GoogleDataTransport: f56af7caa4ed338dc8e138a5d7c5973e66440833
-  GoogleUtilities: 7f2f5a07f888cdb145101d6042bc4422f57e70b3
-  nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
+  Analytics: eefe524436f904b8bb3f8c8c3425280e43b34efc
+  Firebase: c121feb35e4126c0b355e3313fa9b487d47319fd
+  FirebaseABTesting: e66f1f80747792630d9b292966de206d5df9853b
+  FirebaseAnalytics: cd3bd84d722a24a8923918af8af8e5236f615d77
+  FirebaseCore: 907447d8917a4d3eb0cce2829c5a0ad21d90b432
+  FirebaseCoreDiagnostics: 68ad972f99206cef818230f3f3179d52ccfb7f8c
+  FirebaseInstallations: a58d4f72ec5861840b84df489f2668d970df558a
+  FirebaseRemoteConfig: 0ea30de5fb0231df8c1bdcdf3b6c23bdc5066131
+  GoogleAppMeasurement: fd19169c3034975cb934e865e5667bfdce59df7f
+  GoogleDataTransport: cd9db2180fcecd8da1b561aea31e3e56cf834aa7
+  GoogleUtilities: 8de2a97a17e15b6b98e38e8770e2d129a57c0040
+  nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
-  Segment-Firebase: 41677a446f58989db69912059949107afb0c3f38
-  Split: f9a62c7fcd043b7583f4e40dd07fb2409d2a9ca5
+  Segment-Firebase: 709fff402c50f74c218482603683edd42785cbf9
 
-PODFILE CHECKSUM: c3c3c86325b2d6ba242aa62a1199f1638cfc72c2
+PODFILE CHECKSUM: e77da01c8cfd1ea0f7cc0dde9c29c0c35a145f85
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.11.2

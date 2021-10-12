@@ -96,15 +96,12 @@ struct SegmentTestContentView: View {
             
         }
     }
-
+    
     func checkUpdates() {
-        
-//        FeatureFlag.sharedInstance.refresh(){
-//            showImage = FeatureFlag.sharedInstance.isEnabled(key:FeatureFlagKeys.ShowLandmarkImage) ?? true
-        showImage = FeatureFlag.sharedInstance.isEnabled(key:FeatureFlagKeys.ShowLandmarkImage)
-
-        sendAnalytics()
-//        }
+        FeatureFlag.sharedInstance.refresh(){
+            showImage = FeatureFlag.sharedInstance.isEnabled(key:FeatureFlagKeys.ShowLandmarkImage)
+            sendAnalytics()
+        }
     }
     
     func sendAnalytics() {

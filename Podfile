@@ -18,7 +18,7 @@ target 'FeatureFlagging' do
 
   pod 'Analytics'
   
-  pod 'Split'
+  # pod 'Split'
 
 end
 
@@ -40,7 +40,7 @@ target 'FeatureFlaggingTests' do
 
   pod 'Analytics'
 
-  pod 'Split'
+  # pod 'Split'
 
 end
 
@@ -63,6 +63,6 @@ target 'FeatureFlaggingUITests' do
 
   pod 'Analytics'
 
-  pod 'Split'
+  # pod 'Split'
 
 end
